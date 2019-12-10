@@ -7,9 +7,9 @@
     <title>Elegido</title>
 </head>
 <body>
-<h1>Elegiste 1 Hamburguesa</h1>
+<h1>Elegiste <?php $_POST["cantidad"]?> Hamburguesa</h1>
 <form action="mostrar.php" method="POST">
-
+<?php $medida = $_POST["medida"];?>
  <p>Por favor especifique el pedido</p><br><br>
 
  TAMAÑO:
