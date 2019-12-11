@@ -10,7 +10,7 @@
 <form action="mostrar.php" method="POST">
 <?$cantidad = $_POST["cantidad"];?>
 <?for($i=0;$i<$cantidad;$i++){?>
-<p>Por favor especifique el pedido</p><br><br>a{?>
+<p>Por favor especifique el pedido</p><br><br>
  <input type="hidden" name="cantidad" value="$cantidad" >
 
  TAMAÑO:
