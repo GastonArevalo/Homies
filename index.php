@@ -8,7 +8,7 @@
 </head>
 <body>
 <h1>Elige Las Hamburguesas para pedir</h1>
-
+<!--Se envia por el metodo POST el valor de las cantidad de hamburguesas que elija el usuario-->
 <form action="procesar.php" method="POST">
 <p>Elija la cantidad de Hamburguesas que se van a pedir: </p>
 <input type="number" name="cantidad">

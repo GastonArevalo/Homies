@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Especificar</title>
 </head>
 <body>
+<!--se utiliza el valor de canidad para imprimir por pantalla un formulario por hamburguesa-->
 <form action="mostrar.php" method="POST">
 <?$cantidad = $_POST["cantidad"];?>
 <?for($i=0;$i<$cantidad;$i++){?>
@@ -21,6 +22,7 @@
  <option value="xl">XL</option>
  </select>
  <br>
+ <!--se almacenan los datos del formulario en arrays -->
  <label for="toppings">Toppings</label>
  Lechuga                 <input type="checkbox" name="lechuga[]" value="lechuga">
  Tomate                  <input type="checkbox" name="tomate[]" value="tomate">
