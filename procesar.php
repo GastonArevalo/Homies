@@ -11,7 +11,7 @@
 <?$cantidad = $_POST["cantidad"];?>
 <p>Por favor especifique el pedido</p><br><br>
 <?for($i=0;$i<$cantidad;$i++){?>
- 
+ <input type="hidden" name="cantidad" value="$cantidad" >
 
  TAMAÑO:
  <select name="medida[]" id="">
