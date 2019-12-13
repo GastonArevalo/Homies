@@ -5,83 +5,84 @@
     $medida = $_POST["medida$i"];
     
     //es la manera de representar un select por medio de recorrer un string;
-    foreach($medida as $medida){
+    foreach($medida as $k => $medida){
 
         echo "<br> medida" . ": " . $medida."<br><br>";
         echo "Toppings de la Hamburguesa: <br><br>";
     
-    $tomate = $_POST["tomate$i"];
-    $lechuga = $_POST["lechuga$i"];
-    $cebollam = $_POST["cebollam$i"];
-    $cebollac = $_POST["cebollac$i"];
-    $chiles = $_POST["chiles$i"];
-    $bacon = $_POST["bacon$i"];
-    $champ = $_POST["champ$i"];
-    $salsa = $_POST["salsa$i"];
-    $pan = $_POST["pan$i"];
+    $tomate = $_POST["lechuga"];
+    $tomate = $_POST["tomate"];
+    $cebollam = $_POST["cebollam"];
+    $cebollac = $_POST["cebollac"];
+    $chiles = $_POST["chiles"];
+    $bacon = $_POST["bacon"];
+    $champ = $_POST["champ"];
+    $salsa = $_POST["salsa"];
+    $pan = $_POST["pan"];
 
-        if (isset($_POST["lechuga"])){//consulta si existe a recepcion del dato en el formulario
-            
-            foreach($lechuga as $lechuga){     //recorre el array para mostrar el valor del mismo en el caso que existavalor algun
-                echo "<br>"."+ ".$lechuga."<br><br>";
-            }
-        }
         
-        if (isset($_POST["tomate$i"])){//consulta si existe a recepcion del dato en el formulario
+    if (isset($_POST["lechuga"])){//consulta si existe a recepcion del dato en el formulario
             
-            foreach($tomate as $tomate){     //recorre el array para mostrar el valor del mismo en el caso que existavalor algun
-                echo "<br>"."+ ".$tomate."<br><br>";
-            }
-        }
+        if($lechuga[$k]!=""){                              
+          echo "<br>"."+ ".$lechuga[$k]."<br><br>";
+      }
+  }
+        
+    if (isset($_POST["tomate"])){//consulta si existe a recepcion del dato en el formulario
+            
+        if($tomate[$k]!=""){                              
+          echo "<br>"."+ ".$tomate[$k]."<br><br>";
+      }
+  }
         
         if (isset($_POST["cebollam"])){//consulta si existe a recepcion del dato en el formulario
             
-            foreach($cebollam as $cebollam){     //recorre el array para mostrar el valor del mismo en el caso que existavalor algun
-                echo "<br>"."+ ".$cebollam."<br><br>";
+              if($cebollam[$k]!=""){                              
+                echo "<br>"."+ ".$cebollam[$k]."<br><br>";
             }
         }
         
         if (isset($_POST["cebollac"])){//consulta si existe a recepcion del dato en el formulario
             
-            foreach($cebolac as $cebollac){     //recorre el array para mostrar el valor del mismo en el caso que existavalor algun
-                echo "<br>"."+ ".$cebollac."<br><br>";
-            }
-        }
+            if($cebollac[$k]!=""){                              
+              echo "<br>"."+ ".$cebollac[$k]."<br><br>";
+          }
+      }
     
-        if (isset($_POST["chiles"])){//consulta si existe a recepcion del dato en el formulario
+       if (isset($_POST["chiles"])){//consulta si existe a recepcion del dato en el formulario
             
-            foreach($chiles as $chiles){     //recorre el array para mostrar el valor del mismo en el caso que existavalor algun
-                echo "<br>"."+ ".$chiles."<br><br>";
+              if($chiles[$k]!=""){                              
+                echo "<br>"."+ ".$chiles[$k]."<br><br>";
             }
         }
   
         if (isset($_POST["bacon"])){//consulta si existe a recepcion del dato en el formulario
             
-            foreach($bacon as $bacon){     //recorre el array para mostrar el valor del mismo en el caso que existavalor algun
-                echo "<br>"."+ ".$bacon."<br><br>";
-            }
-        }
+            if($bacon[$k]!=""){                              
+              echo "<br>"."+ ".$bacon[$k]."<br><br>";
+          }
+      }
   
-        if (isset($_POST["champ"])){//consulta si existe a recepcion del dato en el formulario
+       if (isset($_POST["champ"])){//consulta si existe a recepcion del dato en el formulario
             
-            foreach($champ as $champ){     //recorre el array para mostrar el valor del mismo en el caso que existavalor algun
-                echo "<br>"."+ ".$champ."<br><br>";
+              if($champ[$k]!=""){                              
+                echo "<br>"."+ ".$champ[$k]."<br><br>";
             }
         }
   
         if (isset($_POST["salsa"])){//consulta si existe a recepcion del dato en el formulario
             
-            foreach($salsa as $salsa){     //recorre el array para mostrar el valor del mismo en el caso que existavalor algun
-                echo "<br>"."+ ".$salsa."<br><br>";
+            if($salsa[$k]!=""){                              
+              echo "<br>"."+ ".$salsa[$k]."<br><br>";
+          }
+      }
+ 
+       if (isset($_POST["pan"])){//consulta si existe a recepcion del dato en el formulario
+            
+              if($pan[$k]!=""){                              
+                echo "<br>"."+ ".$pan[$k]."<br><br>";
             }
         }
- 
-        if (isset($_POST["pan"])){//consulta si existe a recepcion del dato en el formulario
-            
-            foreach($pan as $pan){     //recorre el array para mostrar el valor del mismo en el caso que existavalor algun
-                echo "<br>"."+ ".$pan."<br><br>";
-            }
-        }    
     }
     
 
