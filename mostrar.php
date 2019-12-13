@@ -1,7 +1,9 @@
+<h1>Resumen del pedido:</h1>
+
 <?php
   
   
-    echo "<h1>Pedido: </h1><br><br>";
+
     $medida = $_POST["medida$i"];
     
     //es la manera de representar un select por medio de recorrer un string;
@@ -23,7 +25,7 @@
         
     if (isset($_POST["lechuga"])){//consulta si existe a recepcion del dato en el formulario
             
-        if($lechuga[$k]!=""){                              
+        if($lechuga[$k]!= ""){                              
           echo "<br>"."+ ".$lechuga[$k]."<br><br>";
       }
   }
