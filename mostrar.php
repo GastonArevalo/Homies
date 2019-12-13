@@ -12,7 +12,7 @@
         echo "<br> medida" . ": " . $medida."<br><br>";
         echo "Toppings de la Hamburguesa: <br><br>";
     
-    $tomate = $_POST["lechuga"];
+    $lechuga = $_POST["lechuga"];
     $tomate = $_POST["tomate"];
     $cebollam = $_POST["cebollam"];
     $cebollac = $_POST["cebollac"];
