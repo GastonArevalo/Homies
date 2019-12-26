@@ -4,7 +4,11 @@
   
   
     $cantidad = $_POST["cantidad"];
-    $medida = $_POST["medida"];
+     
+    //es la manera de representar un select por medio de recorrer un string;
+    for($k=0;$k<$cantidad;$k++){
+
+        $medida = $_POST["medida"];
     $lechuga = $_POST["lechuga"];
     $tomate = $_POST["tomate"];
     $cebollam = $_POST["cebollam"];
@@ -13,19 +17,16 @@
     $bacon = $_POST["bacon"];
     $champ = $_POST["champ"];
     $salsa = $_POST["salsa"];
-    $pan = $_POST["pan"];
-    $k = 0;
-    
-    //es la manera de representar un select por medio de recorrer un string;
-    foreach($medida as $medida){
+    $pan = $_POST["pan"];   
 
-        echo "<br> medida" . ": " . $medida."<br><br>";
+
+        echo "<br>"."medida" . ": " . $medida[$k]."<br><br>";
         echo "Toppings de la Hamburguesa: <br><br>";
     
     
 
         
-    if (isset($_POST["lechuga"]) && $lechuga[$k]!= ""){//consulta si existe a recepcion del dato en el formulario
+    if (isset($_POST["lechuga"]) && $lechuga[$k] != ""){//consulta si existe a recepcion del dato en el formulario
           echo "<br>"."+ ".$lechuga[$k]."<br><br>";
             }
   
@@ -66,12 +67,14 @@
             echo "<br>"."+ ".$pan[$k]."<br><br>";
             }
             
-            if($k<$_POST["cantidad"]){
+         /*   if($k<$_POST["cantidad"]){
                 $k++;
-            }
+            }*/
             
     }
     
 
 
  ?>
+ <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
