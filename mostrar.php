@@ -13,7 +13,7 @@
     $bacon = $_POST["bacon"];
     $champ = $_POST["champ"];
     $salsa = $_POST["salsa"];
-    $pan = $_POST["pan"];    
+    $pan = $_POST["pan"];   
     //es la manera de representar un select por medio de recorrer un string;
     for($k=0;$k<$cantidad;$k++){
 
